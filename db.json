@@ -1,0 +1,54 @@
+{
+  "providers": [
+    {
+      "nombre": "Mijhael",
+      "id": 1
+    },
+    {
+      "nombre": "Lucas",
+      "id": 2
+    }
+  ],
+  "products": [
+    {
+      "nombre": "Coca",
+      "id": 1
+    }
+  ],
+  "cages": [
+    {
+      "id": 1,
+      "nombre": "La única",
+      "enUso": "N"
+    }
+  ],
+  "reservations": [
+    {
+      "fecha": "2024-12-23",
+      "horaInicioAgendamiento": "07:00",
+      "horaFinAgendamiento": "09:00",
+      "idProveedor": 1,
+      "detalle": [
+        {
+          "idProducto": 1,
+          "cantidad": 1,
+          "product": {
+            "nombre": "Coca",
+            "id": 1
+          }
+        }
+      ],
+      "id": 1,
+      "idJaula": 1,
+      "horaInicioRecepcion": "01:55"
+    }
+  ],
+  "receptions": [
+    {
+      "id": 1,
+      "fecha": "2024-12-23",
+      "horaInicioRecepcion": "01:55",
+      "horaFinRecepcion": "01:55"
+    }
+  ]
+}

@@ -2,11 +2,11 @@ import { Tabs } from 'expo-router';
 import React from 'react';
 import { Platform } from 'react-native';
 
-import { HapticTab } from '@/components/HapticTab';
-import { IconSymbol } from '@/components/ui/IconSymbol';
-import TabBarBackground from '@/components/ui/TabBarBackground';
-import { Colors } from '@/constants/Colors';
-import { useColorScheme } from '@/hooks/useColorScheme';
+import { HapticTab } from '../../components/HapticTab';
+import { IconSymbol } from '../../components/ui/IconSymbol';
+import TabBarBackground from '../../components/ui/TabBarBackground';
+import { Colors } from '../../constants/Colors';
+import { useColorScheme } from '../../hooks/useColorScheme';
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
@@ -34,10 +34,38 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="products"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          title: 'Productos',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="cube.box.fill" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="providers"
+        options={{
+          title: 'Proveedores',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="person.2.fill" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="cages"
+        options={{
+          title: 'Jaulas',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="square.grid.2x2.fill" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="reservations"
+        options={{
+          title: 'Reservas',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="calendar" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="receptions"
+        options={{
+          title: 'Recepciones',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="arrow.down.doc.fill" color={color} />,
         }}
       />
     </Tabs>

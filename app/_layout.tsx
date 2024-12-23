@@ -6,7 +6,7 @@ import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
 import 'react-native-reanimated';
 
-import { useColorScheme } from '@/hooks/useColorScheme';
+import { useColorScheme } from '../hooks/useColorScheme';
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
@@ -15,6 +15,15 @@ export default function RootLayout() {
   const colorScheme = useColorScheme();
   const [loaded] = useFonts({
     SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
+    'house.fill': require('../assets/fonts/SpaceMono-Regular.ttf'),
+    'paperplane.fill': require('../assets/fonts/SpaceMono-Regular.ttf'),
+    'chevron.left.forwardslash.chevron.right': require('../assets/fonts/SpaceMono-Regular.ttf'),
+    'chevron.right': require('../assets/fonts/SpaceMono-Regular.ttf'),
+    'cube.box.fill': require('../assets/fonts/SpaceMono-Regular.ttf'),
+    'person.2.fill': require('../assets/fonts/SpaceMono-Regular.ttf'),
+    'cage': require('../assets/fonts/SpaceMono-Regular.ttf'),
+    'calendar': require('../assets/fonts/SpaceMono-Regular.ttf'),
+    'arrow.down.doc.fill': require('../assets/fonts/SpaceMono-Regular.ttf'),
   });
 
   useEffect(() => {
